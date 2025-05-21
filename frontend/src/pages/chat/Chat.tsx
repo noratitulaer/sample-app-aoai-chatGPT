@@ -2,6 +2,8 @@ import { useRef, useState, useEffect, useContext, useLayoutEffect } from 'react'
 import { CommandBarButton, IconButton, Dialog, DialogType, Stack } from '@fluentui/react'
 import { SquareRegular, ShieldLockRegular, ErrorCircleRegular } from '@fluentui/react-icons'
 
+import UploadDocument from '../../components/UploadDocument';
+
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
@@ -851,6 +853,7 @@ const Chat = () => {
             )}
 
             <Stack horizontal className={styles.chatInput}>
+              <UploadDocument onUpload={(file) => console.log("Geselecteerd bestand:", file.name)} />
               {isLoading && messages.length > 0 && (
                 <Stack
                   horizontal
