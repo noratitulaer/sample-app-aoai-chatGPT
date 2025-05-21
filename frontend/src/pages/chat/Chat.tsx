@@ -838,7 +838,7 @@ const Chat = () => {
                     <div className={styles.chatMessageGpt}>
                       <Answer
                         answer={{
-                          answer: "Generating answer...",
+                          answer: "test Generating answer...",
                           citations: [],
                           generated_chart: null
                         }}
