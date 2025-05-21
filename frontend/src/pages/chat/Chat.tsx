@@ -936,7 +936,7 @@ const Chat = () => {
               </Stack>
               <QuestionInput
                 clearOnSend
-                placeholder="Type a new question... - test of edit doorkomt"
+                placeholder="Type a new question... - test of edit doorkomt-02"
                 disabled={isLoading}
                 onSend={(question, id) => {
                   appStateContext?.state.isCosmosDBAvailable?.cosmosDB
